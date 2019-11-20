@@ -26,7 +26,7 @@ def load_data(path='crops_nn.tar',
     """
     path = get_file(path,
                     origin="https://www.kaggle.com/noulam/tomato",
-                    file_hash='cbc74aef6e5f20ef22b41d1f0f77e40567e6fd1f4e2c007341df9fb4672c3fd8',
+                    file_hash=' 8787D4B624880012ABDB442532BE762DB0361DECE169FEF9E1E877A9DF9E00CB',
                     extract=True)
 
     try:
