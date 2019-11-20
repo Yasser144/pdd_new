@@ -25,7 +25,7 @@ def load_data(path='crops_nn.tar',
         Path to the folder with data or tuple with train and test paths
     """
     path = get_file(path,
-                    origin=" C:\Users\MiSr CoMpAnY\Downloads\archive_full.zip
+                    origin=" C:\Users\MiSr CoMpAnY\Downloads\archive_full.zip",
 ",
                     file_hash=' 2390014B9DD49EE52559107B60B4EDADAE618AFE41F0B7CED2E4A2DBEFD8D2D1',
                     extract=True)
