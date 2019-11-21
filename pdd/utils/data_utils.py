@@ -193,8 +193,8 @@ def get_file(fname,
                 r = requests.get(origin, 
                                  stream=True, 
                                  headers={'Accept-Encoding': None})
-              # file_total_size = int(r.headers['Content-Length'])
-                # downloading by chunks
+               file_total_size = int(r.headers['Content-Length'])
+               # downloading by chunks
                 if r.status_code == 200:
                     with open(fpath, "wb") as f:
                         for chunk in tqdm(r.iter_content(1024), 
