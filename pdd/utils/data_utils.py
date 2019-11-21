@@ -163,7 +163,7 @@ def get_file(fname,
         cache_dir = os.path.join(os.path.expanduser('~'), '.pdd')
     if md5_hash is not None and file_hash is None:
         file_hash = md5_hash
-        hash_algorithm = 'md5'
+        hash_algorithm = 'SHA256'
     datadir_base = os.path.expanduser(cache_dir)
     if not os.access(datadir_base, os.W_OK):
         datadir_base = os.path.join('/tmp', '.pdd')
