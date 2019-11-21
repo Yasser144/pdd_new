@@ -10,7 +10,7 @@ import numpy as np
 import sys
 
 
-def load_data(path='tomato', 
+def load_data(path='tomato.tar', 
               split_on_train_test=False, 
               test_size=None, 
               random_state=0):
