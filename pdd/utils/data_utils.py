@@ -190,10 +190,10 @@ def get_file(fname,
         error_msg = 'URL fetch failure on {}: {} -- {}'
         try:
             try:
-                #r = requests.get(origin, 
-                                # stream=True, 
-                                # headers={'Accept-Encoding': None})
-               #file_total_size = int(r.headers['Content-Length'])
+               r = requests.get(origin, 
+                                 stream=True, 
+                                 headers={'Accept-Encoding': None})
+               file_total_size = int(r.headers['Content-Length'])
                # downloading by chunks
                 if r.status_code == 200:
                     with open(fpath, "wb") as f:
