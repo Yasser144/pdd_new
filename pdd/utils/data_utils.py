@@ -187,7 +187,7 @@ def get_file(fname,
 
     if download:
         print('Downloading data from', origin)
-        W error_msg = 'URL fetch failure on {}: {} -- {}'
+        error_msg = 'URL fetch failure on {}: {} -- {}'
         try:
             try:
                 r = requests.get(origin, 
