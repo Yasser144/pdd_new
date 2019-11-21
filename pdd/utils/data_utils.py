@@ -122,9 +122,9 @@ def get_file(fname,
              md5_hash=None,
              file_hash= '5A4043518BA0071832EB45BE2C6A24FB887998FA774636B6E6C50947F1757731',
              cache_subdir='datasets',
-             hash_algorithm='SHA256',
+             hash_algorithm='auto',
              extract=False,
-             archive_format='zip',
+             archive_format='auto',
              cache_dir=None):
     """Downloads a file from a URL if it not already in the cache.
     By default the file at the url `origin` is downloaded to the
