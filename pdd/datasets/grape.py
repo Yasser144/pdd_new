@@ -10,7 +10,7 @@ import numpy as np
 import sys
 
 
-def load_data(path='C:\Users\MiSr CoMpAnY\Downloads\archive_full.zip', 
+def load_data(path='tomato.zip', 
               split_on_train_test=False, 
               test_size=None, 
               random_state=0):
@@ -25,8 +25,8 @@ def load_data(path='C:\Users\MiSr CoMpAnY\Downloads\archive_full.zip',
         Path to the folder with data or tuple with train and test paths
     """
     path = get_file(path,
-                    origin="http://pdd.jinr.ru/crops_nn.tar",
-                    file_hash=' 2390014B9DD49EE52559107B60B4EDADAE618AFE41F0B7CED2E4A2DBEFD8D2D1',
+                    origin="https://www.kaggle.com/noulam/tomato",
+                    file_hash=' 5A4043518BA0071832EB45BE2C6A24FB887998FA774636B6E6C50947F1757731',
                     extract=True)
 
     try:
