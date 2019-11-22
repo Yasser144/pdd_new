@@ -188,7 +188,7 @@ def get_file(fname,
     if download:
         print('Downloading data from', origin)
         error_msg = 'URL fetch failure on {}: {} -- {}'
-        try:
+       # try:
            # try:
               # r = requests.get(origin, 
                                  #stream=True, 
@@ -201,12 +201,12 @@ def get_file(fname,
                 #                          total=file_total_size // 1024, 
                 #                          ncols=57):
                  #           f.write(chunk)
-            except requests.exceptions.HTTPError as e:
-                raise Exception(error_msg.format(origin, e.code, e.msg))
-            except requests.exceptions.HTTPConnectionPool as e:
-                raise Exception(error_msg.format(origin, e.code, e.msg))
-            except requests.exceptions.URLRequired as e:
-                raise Exception(error_msg.format(origin, e.errno, e.reason))
+           # except requests.exceptions.HTTPError as e:
+           #     raise Exception(error_msg.format(origin, e.code, e.msg))
+           # except requests.exceptions.HTTPConnectionPool as e:
+           #     raise Exception(error_msg.format(origin, e.code, e.msg))
+           # except requests.exceptions.URLRequired as e:
+           #     raise Exception(error_msg.format(origin, e.errno, e.reason))
         except (Exception, KeyboardInterrupt):
             if os.path.exists(fpath):
                 os.remove(fpath)
