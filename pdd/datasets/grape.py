@@ -11,7 +11,7 @@ import sys
 
 
 def load_data(path='tomato.zip', 
-              split_on_train_test=False, 
+              split_on_train_test=True, 
               test_size=None, 
               random_state=0):
     """Loads the PDD grape dataset.
