@@ -122,7 +122,7 @@ def get_file(fname,
              md5_hash=None,
              file_hash= None,
              cache_subdir='datasets',
-             hash_algorithm='auto',
+             hash_algorithm='SHA256',
              extract=False,
              archive_format='auto',
              cache_dir=None):
@@ -189,18 +189,18 @@ def get_file(fname,
         print('Downloading data from', origin)
         error_msg = 'URL fetch failure on {}: {} -- {}'
         try:
-            try:
-               r = requests.get(origin, 
-                                 stream=True, 
-                                 headers={'Accept-Encoding': None})
-               file_total_size = int(r.headers['Content-Length'])
+           # try:
+              # r = requests.get(origin, 
+                                 #stream=True, 
+                                 #headers={'Accept-Encoding': None})
+               #file_total_size = int(r.headers['Content-Length'])
                # downloading by chunks
-               if r.status_code == 200:
-                   with open(fpath, "wb") as f:
-                        for chunk in tqdm(r.iter_content(1024), 
-                                          total=file_total_size // 1024, 
-                                          ncols=57):
-                            f.write(chunk)
+               #if r.status_code == 200:
+               #    with open(fpath, "wb") as f:
+                #        for chunk in tqdm(r.iter_content(1024), 
+                #                          total=file_total_size // 1024, 
+                #                          ncols=57):
+                 #           f.write(chunk)
             except requests.exceptions.HTTPError as e:
                 raise Exception(error_msg.format(origin, e.code, e.msg))
             except requests.exceptions.HTTPConnectionPool as e:
