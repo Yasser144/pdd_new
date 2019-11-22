@@ -122,7 +122,7 @@ def get_file(fname,
              md5_hash=None,
              file_hash= None,
              cache_subdir='datasets',
-             hash_algorithm='SHA256',
+             hash_algorithm='auto',
              extract=False,
              archive_format='auto',
              cache_dir=None):
