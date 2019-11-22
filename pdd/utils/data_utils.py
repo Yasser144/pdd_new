@@ -120,7 +120,7 @@ def _extract_archive(file_path, path='.', archive_format='auto'):
 def get_file(fname,
              origin,
              md5_hash=None,
-             file_hash= '5A4043518BA0071832EB45BE2C6A24FB887998FA774636B6E6C50947F1757731',
+             file_hash= None,
              cache_subdir='datasets',
              hash_algorithm='auto',
              extract=False,
