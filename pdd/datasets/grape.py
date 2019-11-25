@@ -26,7 +26,7 @@ def load_data(path='tomato.zip',
     """
     path = get_file(path,
                     origin="drive/MY Drive/new_test/tomato.zip",
-                    file_hash= None,                                                                             ',
+                                                                                                 ',
                     extract=True)
 
     try:
