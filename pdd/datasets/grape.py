@@ -25,8 +25,8 @@ def load_data(path='tomato.zip',
         Path to the folder with data or tuple with train and test paths
     """
     path = get_file(path,
-                    origin="drive/MY Drive/new_test/tomato.zip",
-                    file_hash='cbc74aef6e5f20ef22b41d1f0f77e40567e6fd1f4e2c007341df9fb4672c3fd8',
+                    origin="https://drive.google.com/drive/u/0/folders/1nzyzv3C8OUnIkcDCsNc1reTOk9q-3nWE",
+                    file_hash='5A4043518BA0071832EB45BE2C6A24FB887998FA774636B6E6C50947F1757731',
                                                                                                  
                     extract=True)
 
