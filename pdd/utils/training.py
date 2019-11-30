@@ -52,7 +52,7 @@ class SiameseBatchGenerator(BaseBatchGenerator):
     # Arguments
     """
     def __init__(self, X, y, 
-                 batch_size=32, 
+                 batch_size=1500, 
                  flow_from_dir=False, 
                  augment=False, 
                  **kwargs):
