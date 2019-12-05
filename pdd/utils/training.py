@@ -75,7 +75,7 @@ class SiameseBatchGenerator(BaseBatchGenerator):
 
 
     @classmethod
-    def from_directory(cls, dirname, batch_size=1500, augment=False):
+    def from_directory(cls, dirname='/content/drive/My Drive/new_test/tomato', batch_size=1500, augment=False):
         '''Constructor only for images
         '''
         assert os.path.isdir(dirname), "There is no such directory `%s`" % dirname
