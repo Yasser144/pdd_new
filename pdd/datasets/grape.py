@@ -25,7 +25,7 @@ def load_data(path='tomato.zip',
         Path to the folder with data or tuple with train and test paths
     """
     path = get_file(path,
-                    origin="https://www.kaggle.com/noulam/tomato",
+                    origin="kaggle datasets download -d noulam/tomato",
                     file_hash='45552f8bcd76a41398c21b57087bd378',
                                                                                                  
                     extract=True)
