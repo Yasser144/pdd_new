@@ -26,7 +26,7 @@ def load_data(path='tomato.zip',
     """
     path = get_file(path,
                     origin="https://www.kaggle.com/noulam/tomato",
-                    file_hash='aa1a0f04f75e7840780d75c9a25c2d986f02e0f9e6ce52cde44d13b85a1c9afb',
+                    file_hash='5a4043518ba0071832eb45be2c6a24fb887998fa774636b6e6c50947f1757731',
                                                                                                  
                     extract=True)
 
