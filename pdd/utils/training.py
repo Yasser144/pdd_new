@@ -197,7 +197,7 @@ class SiameseBatchGenerator(BaseBatchGenerator):
         batch_xs = np.zeros((2, batch_size, *self.x.shape[1:]), dtype=self.x.dtype)
         batch_ys = np.ones((batch_size, ), dtype=np.int8)
         # positive pairs
-        batch_xs[:, :batch_size // 2] = self.__create_pairs(batch_size,pos=True)
+        batch_xs[:, :batch_size // 2] = self.__create_pairs(batch_size)
         # negative pairs
         batch_xs[:, batch_size // 2:] = self.__create_pairs(batch_size, pos=False)
         batch_ys[batch_size // 2:] = 0
