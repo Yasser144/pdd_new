@@ -53,7 +53,7 @@ def create_dataset_from_dir(dirname, shuffle=False, **kwargs):
         x.extend(imgs)                          # add images to list
         y += [i] * len(imgs)                    # add labels to list
 
-    x = np.asarray(x).reshape(-1,50,50)
+    x = np.asarray(x).reshape
     y = np.asarray(y)
 
     if shuffle:
