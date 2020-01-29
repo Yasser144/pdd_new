@@ -29,7 +29,7 @@ def read_image(filename, normalize=True, grayscale=False):
 def read_images_from_dir(dirname, **kwargs):
     img_names = os.listdir(dirname)
     imgs = [None] * len(img_names)
-    for i, fname in enumerate(img_names):
+    for i, fname in enumerate(img_names[0:4]):
         path_to_img = os.path.join(dirname, fname)
         try:
             imgs[i] = read_image(path_to_img, **kwargs)
