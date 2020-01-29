@@ -78,12 +78,11 @@ class SiameseBatchGenerator(BaseBatchGenerator):
     def from_directory(cls, dirname, batch_size=32, augment=False):
         '''Constructor only for images
         '''
-        #assert os.path.isdir(dirname), "There is no such directory `%s`" % dirname
-       with open(os.path.join(direname), "rb") as f:
-           class_folder = pickle.load(f)
+        assert os.path.isdir(dirname), "There is no such directory `%s`" % dirname
+       
     
         X, y = [], []
-        #class_folders = glob(os.path.join(dirname, "*", ""))
+        class_folders = glob(os.path.join(dirname, "*", ""))
 
         n_classes = len(class_folders)
         samples_per_class = np.zeros(n_classes, dtype=np.int32)
