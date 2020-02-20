@@ -10,7 +10,7 @@ import numpy as np
 import sys
 
 
-def load_data(path='tomato.zip',origin="https://drive.google.com/open?id=1DIPNfU20TH7A7gj-sWXDkKSmCSTY3EtR",
+def load_data(path='tomato.zip',origin="/content/PlantVillage-Dataset/raw/grayscale",
               split_on_train_test=False, 
               test_size=None, 
               random_state=0):
